@@ -1281,6 +1281,46 @@ audio {
 	font-weight: bold;
 }
 
+.photo-memories {
+	display: none;
+	margin-top: 80px;
+	margin-bottom: 90px;
+}
+
+.photo-title {
+	font-family: 'Signika', sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	color: #C4515C;
+	text-shadow: 2px 2px 2px #FFF;
+	margin-bottom: 20px;
+}
+
+.photo-frame {
+	max-width: 520px;
+	margin: 0 auto;
+	padding: 12px;
+	background: rgba(255, 255, 255, 0.85);
+	border-radius: 12px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.photo-frame img {
+	width: 100%;
+	max-height: 420px;
+	object-fit: contain;
+	border-radius: 8px;
+}
+
+.photo-caption {
+	font-family: 'Signika', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #C4515C;
+	text-shadow: 1px 1px 2px #FFF;
+	margin-top: 18px;
+}
+
 .btn-primary {
         border-color: #466baf;
         padding: 10px;
