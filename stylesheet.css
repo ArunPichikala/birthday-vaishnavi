@@ -1323,12 +1323,16 @@ audio {
 
 .btn-primary {
         border-color: #466baf;
-        padding: 10px;
+        padding: 12px 18px;
         text-transform: uppercase;
         font-family: 'Signika', sans-serif;
         font-weight: 700;
         color: #fff;
         background-color: #466baf;
+        border-radius: 999px;
+        box-shadow: 0 6px 16px rgba(70, 107, 175, 0.35);
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+        animation: btn-pulse 2.2s ease-in-out infinite;
 }
     .btn-primary:hover,
     .btn-primary:focus,
@@ -1337,8 +1341,15 @@ audio {
     .open .dropdown-toggle.btn-primary {
         border-color: #fff;
         color: #fff;
-        background-color: #466baf;
+        background-color: #3a5a9a;
+        transform: translateY(-2px) scale(1.04);
+        box-shadow: 0 10px 22px rgba(70, 107, 175, 0.45);
     }
+
+@keyframes btn-pulse {
+	0%, 100% { box-shadow: 0 6px 16px rgba(70, 107, 175, 0.35); }
+	50% { box-shadow: 0 8px 24px rgba(196, 81, 92, 0.45); }
+}
 
 
 
