@@ -100,7 +100,7 @@ $('document').ready(function () {
 		$('.hero-name').fadeOut('fast');
 
 		var toast = $(
-			'<div class="unlock-toast"><h3>You did it, Vaishu</h3><p>Here comes your message…</p></div>'
+			'<div class="unlock-toast"><h3>You did it, Vaishu</h3><p>This is the surprise for you</p></div>'
 		);
 		$('body').append(toast);
 		setTimeout(function () {
@@ -132,14 +132,14 @@ $('document').ready(function () {
 
 		function msgLoop(i) {
 			$('.message p:nth-child(' + i + ')')
-				.fadeOut('slow')
-				.delay(800)
+				.fadeOut(250)
+				.delay(250)
 				.promise()
 				.done(function () {
 					i = i + 1;
 					if (i > total) {
 						$('.message')
-							.fadeOut('slow')
+							.fadeOut(400)
 							.promise()
 							.done(function () {
 								$('.photo-memories').fadeIn('slow');
@@ -148,8 +148,8 @@ $('document').ready(function () {
 						return;
 					}
 					$('.message p:nth-child(' + i + ')')
-						.fadeIn('slow')
-						.delay(1000)
+						.fadeIn(300)
+						.delay(900)
 						.promise()
 						.done(function () {
 							msgLoop(i);
